@@ -25,7 +25,9 @@
           >
           <ul class="navmenu-list ul-list">
             <li class="navmenu-list-item">
+              <div>
               <a class="navmenu-list-link link activ" href="index.html">Agencja</a>
+              </div>
             </li>
             <li class="navmenu-list-item">
               <a class="navmenu-list-link link" href="portfolio.html">Portfolio</a>
@@ -55,7 +57,7 @@
       <section class="main-section">
         <div class="container">
           <h1 class="h1-txt">efektywne rozwiązania dla waszego biznesu</h1>
-          <button class="button-order" type="button">Zamów usługe</button>
+          <button class="button-order" type="button" data-modal-open >Zamów usługe</button>
         </div>
       </section>
 
@@ -461,5 +463,11 @@
         </ul>
       </div>
     </footer>
+     <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+          <button type="button" class="close-btn" data-modal-close>X</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
