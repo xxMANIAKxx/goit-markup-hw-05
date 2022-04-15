@@ -10,6 +10,7 @@
     --background: #2F303A;
     --background-team: #F5F4FA;
     --icon-gray: #AFB1B8;
+    --aboutus-background: rgba(47, 48, 58, 0.8);
 }
 
 body{
@@ -43,7 +44,6 @@ letter-spacing: 0.03em;
 img{
     display: block;
 }
-
 .container{
 width: 1200px;
 padding: 0px 15px;
@@ -78,12 +78,14 @@ color: var(--highlight-color);
 .logo-dark{
 color: var(--basic-black);
 margin-right: 93px;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-light{
 color: var(--basic-white);
 padding-top: 60px;
 padding-bottom: 20px;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-link{
@@ -121,6 +123,9 @@ line-height: 1.192;
 .button-filtr {
     border-radius: 4px;
     border: none;
+    transition-property: color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-filtr{
     background-color: var(--background-team);
@@ -146,6 +151,7 @@ line-height: 1.192;
     color: var(--basic-white);
     background-color: var(--highlight-color);
     padding: 10px 41px;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-filtr {
@@ -184,11 +190,13 @@ letter-spacing: 0.02em;
 }
 .navmenu-list-link{
     color: var(--main-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-email,
 .header-phone{
 color: var(--secondary-color);
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header .container{
@@ -352,6 +360,25 @@ color: var(--secondary-color)
 .aboutus-list-item:not(:last-child){
     margin-right: 30px;
 }
+
+.thumb{
+position: relative;
+}
+
+.aboutus-discription{
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: var(--aboutus-background);
+    color: var(--basic-white);
+}
 /* == about us end == */
 
 /* == team == */
@@ -460,6 +487,14 @@ justify-content: center;
 fill: var(--highlight-color);
 border-color: var(--highlight-color);
 }
+.social-media-link,
+.client-link{
+    transition-property: fill, background-color, border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
 /* clients end */
 
 
@@ -482,6 +517,7 @@ border-color: var(--highlight-color);
     width: 370px;
     margin-bottom: 30px;
     border: 1px solid #EEEEEE;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 .project-discription{
 padding: 20px 24px;
@@ -498,6 +534,7 @@ padding: 20px 24px;
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
 /* == portfolio end == */
 /* == footer == */
 .h6-txt{
@@ -521,11 +558,13 @@ padding: 20px 24px;
 
 .adres-list-street {
     color: var(--basic-white);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .adres-list-email,
 .adres-list-phone {
     color: var(--footer-text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-sections{
     display: flex;
